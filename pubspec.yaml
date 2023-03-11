@@ -1,0 +1,47 @@
+name: baldy_dash_app
+description: The online marketing presence for Baldy Dash
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  internet_connection_checker: ^1.0.0+1
+  intl: any
+
+  flutter_localizations:
+    sdk: flutter
+    
+  flutter_native_splash: ^2.2.18
+  
+  get_it: ^7.2.0
+  shared_preferences: ^2.0.18
+  desktop_window: ^0.4.0
+  flutter_displaymode: ^0.5.0
+  flutter_animate: ^4.1.0
+  sized_context: ^1.0.0+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  generate: true
+
+  assets:
+    - assets/images/_common/
+    - assets/images/_common/app-logo.png
+    
+  # fonts:
+  #   - family: Cinzel
+  #     fonts:
+  #       - asset: assets/fonts/CinzelDecorative-Regular.ttf
