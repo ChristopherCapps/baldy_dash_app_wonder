@@ -25,6 +25,7 @@ class AppService {
 
     ServiceRegistry.register(
         localeServiceFactory, settingsServiceFactory, uxServiceFactory);
+    debugPrint("service registry initialized");
   }
 
   Future<void> _initializeUx() async {

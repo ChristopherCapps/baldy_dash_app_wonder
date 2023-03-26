@@ -33,6 +33,7 @@ class LocaleService {
 
     settingsService.updateLocale(locale.languageCode);
     _strings = await AppLocalizations.delegate.load(locale);
+    debugPrint("locale service loaded");
   }
 
   void _settingsChanged() {

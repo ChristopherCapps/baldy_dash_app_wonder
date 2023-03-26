@@ -7,6 +7,7 @@ mixin FilePersistenceMixin {
   final _throttle = Throttler(const Duration(seconds: 2));
 
   Future<void> load() async {
+    debugPrint("loading ${_file.name}");
     final results = await _file.load();
     try {
       fromJson(results);
@@ -16,7 +17,7 @@ mixin FilePersistenceMixin {
   }
 
   Future<void> save() async {
-    debugPrint('Saving...');
+    debugPrint('saving ${_file.name}');
     try {
       await _file.save(toJson());
     } on Exception catch (e) {
